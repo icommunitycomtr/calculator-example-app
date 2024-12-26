@@ -3,6 +3,14 @@ Tek ekranlı basit bir hesap makinesi yap.
 0'dan 9'a kadar numaralar, 4 basit matematik işlemi (toplama, çıkarma, çarpma, bölme) olsun.
 Bir de hesaplamanın sonucunu gösteren bir label olsun.
 
+## Tasarım
+Tasarımı incelemek için .fig uzantılı [tasarım dosyasını](https://github.com/icommunitycomtr/hesap-makinesi/blob/main/iCommunity-HesapMakinesi.fig) indirip Figma'ya import alabilirsiniz.
+
+Tasarımı olabildiğince koda dökmeye çalışın. Gerçek bir iş deneyimi gibi olsun.
+
+Tasarımda bir kaç tane iOS ekosistemine aykırı durum var. Bu durumları bilerek düzeltmedik ve sizin bulmanızı istiyoruz.
+İpucu: Tasarımcıdan gelen tasarımı hemen kabul etmeyin, önce iOS ekosistemine uygun mu değil mi kontrolü yapın. Eğer uygun olmayan durumlar var ise tasarımcıya iletip düzeltmesini isteyin.
+
 ## Hedef
 - Düzenli bir **folder structure** kurabilmek
 - **Controller** ve **View** arasındaki ilişkiyi anlamak
