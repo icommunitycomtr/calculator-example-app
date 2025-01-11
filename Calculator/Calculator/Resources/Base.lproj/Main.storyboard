@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eYo-51-uca">
-                                <rect key="frame" x="0.0" y="59" width="382" height="303.66666666666669"/>
+                                <rect key="frame" x="0.0" y="42.333333333333343" width="382" height="303.66666666666663"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="961" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="vBK-DO-edh">
-                                        <rect key="frame" x="216.66666666666663" y="187.33333333333334" width="141.33333333333337" height="100.33333333333334"/>
+                                        <rect key="frame" x="224.66666666666663" y="187.33333333333331" width="141.33333333333337" height="100.33333333333331"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="90"/>
                                         <nil key="textColor"/>
@@ -33,11 +33,11 @@
                                     <constraint firstAttribute="bottom" secondItem="vBK-DO-edh" secondAttribute="bottom" constant="16" id="LSr-7w-NGz"/>
                                     <constraint firstItem="vBK-DO-edh" firstAttribute="width" secondItem="eYo-51-uca" secondAttribute="width" multiplier="0.37" id="P38-Sy-Ott"/>
                                     <constraint firstItem="vBK-DO-edh" firstAttribute="height" secondItem="eYo-51-uca" secondAttribute="height" multiplier="0.33" id="siJ-Hu-mUm"/>
-                                    <constraint firstAttribute="trailing" secondItem="vBK-DO-edh" secondAttribute="trailing" constant="24" id="uXF-ac-hGk"/>
+                                    <constraint firstAttribute="trailing" secondItem="vBK-DO-edh" secondAttribute="trailing" constant="16" id="uXF-ac-hGk"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="prd-U0-jug">
-                                <rect key="frame" x="16" y="378.66666666666674" width="350" height="440"/>
+                                <rect key="frame" x="16" y="362" width="350" height="440"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pL3-IK-neY" userLabel="Stack1">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="80"/>
@@ -218,7 +218,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gWi-sO-7Iz" userLabel="Stack3">
-                                        <rect key="frame" x="0.0" y="179.99999999999994" width="350" height="80"/>
+                                        <rect key="frame" x="0.0" y="180" width="350" height="80"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ut8-ph-yuD">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
@@ -307,7 +307,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wIi-6c-kVS" userLabel="Stack4">
-                                        <rect key="frame" x="0.0" y="269.99999999999994" width="350" height="80"/>
+                                        <rect key="frame" x="0.0" y="270" width="350" height="80"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fq-CR-yFn">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
@@ -396,13 +396,13 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JUf-sf-qxL" userLabel="Stack5">
-                                        <rect key="frame" x="0.0" y="359.99999999999994" width="350" height="80"/>
+                                        <rect key="frame" x="0.0" y="360" width="350" height="80"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEM-G0-RvN">
                                                 <rect key="frame" x="0.0" y="0.0" width="170" height="80"/>
                                                 <color key="backgroundColor" name="buttonBackgroundColorDark"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="170" id="Dzl-vf-LWJ"/>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="170" id="Dzl-vf-LWJ"/>
                                                     <constraint firstAttribute="height" constant="80" id="GDr-QH-2Tp"/>
                                                 </constraints>
                                                 <color key="tintColor" name="textColor"/>
@@ -468,11 +468,11 @@
                         <constraints>
                             <constraint firstItem="eYo-51-uca" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.4" id="1Xf-mW-2HJ"/>
                             <constraint firstItem="eYo-51-uca" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1yW-ka-rAe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="prd-U0-jug" secondAttribute="bottom" constant="16" id="JMT-p3-Kgj"/>
                             <constraint firstItem="prd-U0-jug" firstAttribute="top" secondItem="eYo-51-uca" secondAttribute="bottom" constant="16" id="dRw-bK-gbj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="prd-U0-jug" secondAttribute="trailing" constant="16" id="isv-17-rei"/>
                             <constraint firstItem="prd-U0-jug" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="lzT-C0-tTJ"/>
                             <constraint firstItem="eYo-51-uca" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nzb-JT-XpJ"/>
-                            <constraint firstItem="eYo-51-uca" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vPk-re-kM5"/>
                         </constraints>
                     </view>
                     <connections>
