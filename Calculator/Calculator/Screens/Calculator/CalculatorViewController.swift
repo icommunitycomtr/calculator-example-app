@@ -8,12 +8,37 @@
 import UIKit
 
 class CalculatorViewController: UIViewController {
-
+    
+    @IBOutlet weak var calculatorLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
+    
+    
+    @IBAction func numberPressed(_ sender: Any) {
+    }
+    
+    
+    
+    @IBAction func operationPressed(_ sender: Any) {
+    }
+    
+    
+    
+    
+    @IBAction func equalButton(_ sender: Any) {
+    }
+    
+    @IBAction func clearButton(_ sender: Any) {
+    }
+    
+    @IBAction func percentButton(_ sender: Any) {
+    }
+    
+    @IBAction func signChangeButton(_ sender: Any) {
+    }
+    
 
 }
 
