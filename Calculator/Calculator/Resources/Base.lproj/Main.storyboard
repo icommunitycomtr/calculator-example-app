@@ -105,7 +105,7 @@
                                                     <action selector="percentButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UgJ-oY-iZv"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdz-QS-4BV">
+                                            <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdz-QS-4BV">
                                                 <rect key="frame" x="270" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" name="buttonBackgroundColorRed"/>
                                                 <constraints>
@@ -194,7 +194,7 @@
                                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z9o-cm-D1z"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uqj-RZ-EDx">
+                                            <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uqj-RZ-EDx">
                                                 <rect key="frame" x="270" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" name="buttonBackgroundColorRed"/>
                                                 <constraints>
@@ -283,7 +283,7 @@
                                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xwx-ex-SHF"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vn-oW-1Dh">
+                                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vn-oW-1Dh">
                                                 <rect key="frame" x="270" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" name="buttonBackgroundColorRed"/>
                                                 <constraints>
@@ -372,7 +372,7 @@
                                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cmP-6h-Mo8"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUm-pT-ACN">
+                                            <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUm-pT-ACN">
                                                 <rect key="frame" x="270" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" name="buttonBackgroundColorRed"/>
                                                 <constraints>
