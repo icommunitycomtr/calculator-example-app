@@ -11,7 +11,7 @@ class CalculatorViewController: UIViewController {
     
     @IBOutlet weak var calculatorLabel: UILabel!
     
-    var currentValue: String = "0"
+    var currentValue: String = "0" // Current value displayed on screen
     var previousValue: Double = 0
     var currentOperation: String? = nil
     
@@ -19,15 +19,18 @@ class CalculatorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
     
     
     @IBAction func numberPressed(_ sender: UIButton) {
+        //Get the tag value of the button
+        let buttonTag = sender.tag
         if currentValue == "0" {
-            currentValue = sender.titleLabel?.text ?? "0"
+            currentValue = String(buttonTag)
         }else{
-            currentValue += sender.titleLabel?.text ?? ""
+            currentValue += String(buttonTag)
         }
+        //Show the result on the calculator label
         calculatorLabel.text = currentValue
     }
     
@@ -56,6 +59,6 @@ class CalculatorViewController: UIViewController {
     @IBAction func signChangeButton(_ sender: UIButton) {
     }
     
-
+    
 }
 
