@@ -71,10 +71,32 @@ class CalculatorViewController: UIViewController {
         currentValue = "0"
     }
     
-    
-    
-    
     @IBAction func equalButton(_ sender: UIButton) {
+        let currentVal = Double(currentValue) ?? 0
+        
+        guard let operation = currentOperation else {
+            return
+        }
+        
+        switch operation {
+        case .addition:
+            currentValue = String(previousValue + currentVal)
+        case .subtraction:
+            currentValue = String(previousValue - currentVal)
+        case .multiplication:
+            currentValue = String(previousValue * currentVal)
+        case .division:
+            // division by zero
+            if currentVal == 0 {
+                let alert = UIAlertController(title: "Error", message: "Division by zero is not allowed", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                present(alert, animated: true, completion: nil)
+                return
+            }
+            currentValue = String(previousValue / currentVal)
+        }
+        calculatorLabel.text = currentValue // show result on display
+        currentOperation = nil // update 
     }
     
     
