@@ -11,10 +11,16 @@ class CalculatorViewController: UIViewController {
     
     @IBOutlet weak var calculatorLabel: UILabel!
     
+    enum operationType: Int {
+        case addition = 100,
+             subtraction,
+             multiplication,
+             division
+    }
+    
     var currentValue: String = "0" // Current value displayed on screen
     var previousValue: Double = 0
-    var currentOperation: String? = nil
-    
+    var currentOperation: operationType? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +43,32 @@ class CalculatorViewController: UIViewController {
     
     
     @IBAction func operationPressed(_ sender: UIButton) {
+        
+        let operationTag = sender.tag
+        //Return if an operation is selected result yet, to stop new operation
+        if currentOperation != nil {
+            return
+        }
+        previousValue = Double(currentValue) ?? 0
+        
+        //Set operation type with the tag value.
+        if let operation = operationType(rawValue: operationTag) {
+            switch operationType(rawValue: operationTag) {
+            case .addition:
+                currentOperation = .addition
+            case .subtraction:
+                currentOperation = .subtraction
+            case .multiplication:
+                currentOperation = .multiplication
+            case .division:
+                currentOperation = .division
+            default:
+                break
+            }
+        } else {
+            print("Invalid operation tag!")
+        }
+        currentValue = "0"
     }
     
     
