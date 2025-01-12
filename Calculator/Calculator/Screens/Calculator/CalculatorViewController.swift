@@ -106,6 +106,9 @@ class CalculatorViewController: UIViewController {
     }
     
     @IBAction func percentButton(_ sender: UIButton) {
+        let currenVal = Double(currentValue) ?? 0
+        currentValue = String(currenVal / 100)
+        calculatorLabel.text = currentValue
     }
     
     @IBAction func signChangeButton(_ sender: UIButton) {
