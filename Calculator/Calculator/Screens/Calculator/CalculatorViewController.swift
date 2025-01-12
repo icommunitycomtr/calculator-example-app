@@ -112,6 +112,9 @@ class CalculatorViewController: UIViewController {
     }
     
     @IBAction func signChangeButton(_ sender: UIButton) {
+        let currenVal = Double(currentValue) ?? 0
+        currentValue = String(currenVal * -1)
+        calculatorLabel.text = currentValue
     }
     
     
