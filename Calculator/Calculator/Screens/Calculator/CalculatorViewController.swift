@@ -40,6 +40,12 @@ class CalculatorViewController: UIViewController {
         calculatorLabel.text = currentValue
     }
     
+    @IBAction func comaButton(_ sender: UIButton) {
+        if !currentValue.contains(".") {
+            currentValue += "."
+        }
+        calculatorLabel.text = currentValue
+    }
     
     
     @IBAction func operationPressed(_ sender: UIButton) {

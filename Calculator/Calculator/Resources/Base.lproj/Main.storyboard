@@ -436,6 +436,9 @@
                                                         <integer key="value" value="35"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="comaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jCP-MJ-ob8"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pu9-m8-a3P">
                                                 <rect key="frame" x="270" y="0.0" width="80" height="80"/>
