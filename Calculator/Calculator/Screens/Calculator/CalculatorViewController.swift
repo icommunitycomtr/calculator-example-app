@@ -81,14 +81,14 @@ class CalculatorViewController: UIViewController {
         guard let operation = currentOperation else {
             return
         }
-        
+        var result: Double = 0
         switch operation {
         case .addition:
-            currentValue = String(previousValue + currentVal)
+            result = previousValue + currentVal
         case .subtraction:
-            currentValue = String(previousValue - currentVal)
+            result = previousValue - currentVal
         case .multiplication:
-            currentValue = String(previousValue * currentVal)
+            result = previousValue * currentVal
         case .division:
             // division by zero
             if currentVal == 0 {
@@ -97,8 +97,11 @@ class CalculatorViewController: UIViewController {
                 present(alert, animated: true, completion: nil)
                 return
             }
-            currentValue = String(previousValue / currentVal)
+            result = previousValue / currentVal
         }
+        
+        currentValue = result.truncatingRemainder(dividingBy: 1) == 0 ? String(Int(result)) : String(format: "%.2f", result)
+        
         calculatorLabel.text = currentValue // show result on display
         currentOperation = nil // update currentOperation
     }
