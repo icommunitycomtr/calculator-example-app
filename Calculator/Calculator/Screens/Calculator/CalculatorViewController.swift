@@ -94,7 +94,7 @@ class CalculatorViewController: UIViewController {
             currentValue = String(previousValue / currentVal)
         }
         calculatorLabel.text = currentValue // show result on display
-        currentOperation = nil // update 
+        currentOperation = nil // update currentOperation
     }
     
     
