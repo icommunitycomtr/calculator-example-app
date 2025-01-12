@@ -53,7 +53,7 @@ class CalculatorViewController: UIViewController {
         
         //Set operation type with the tag value.
         if let operation = operationType(rawValue: operationTag) {
-            switch operationType(rawValue: operationTag) {
+            switch operation {
             case .addition:
                 currentOperation = .addition
             case .subtraction:
@@ -62,8 +62,6 @@ class CalculatorViewController: UIViewController {
                 currentOperation = .multiplication
             case .division:
                 currentOperation = .division
-            default:
-                break
             }
         } else {
             print("Invalid operation tag!")
