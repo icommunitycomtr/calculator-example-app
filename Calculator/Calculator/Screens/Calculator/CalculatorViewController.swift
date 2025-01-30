@@ -11,7 +11,7 @@ class CalculatorViewController: UIViewController {
     
     @IBOutlet weak var calculatorLabel: UILabel!
     
-    enum operationType: Int {
+    enum OperationType: Int {
         case addition = 100,
              subtraction,
              multiplication,
@@ -20,13 +20,7 @@ class CalculatorViewController: UIViewController {
     
     var currentValue: String = "0" // Current value displayed on screen
     var previousValue: Double = 0
-    var currentOperation: operationType? = nil
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
-    
+    var currentOperation: OperationType? = nil
     
     @IBAction func numberPressed(_ sender: UIButton) {
         //Get the tag value of the button
@@ -47,7 +41,6 @@ class CalculatorViewController: UIViewController {
         calculatorLabel.text = currentValue
     }
     
-    
     @IBAction func operationPressed(_ sender: UIButton) {
         
         let operationTag = sender.tag
@@ -56,22 +49,7 @@ class CalculatorViewController: UIViewController {
             return
         }
         previousValue = Double(currentValue) ?? 0
-        
-        //Set operation type with the tag value.
-        if let operation = operationType(rawValue: operationTag) {
-            switch operation {
-            case .addition:
-                currentOperation = .addition
-            case .subtraction:
-                currentOperation = .subtraction
-            case .multiplication:
-                currentOperation = .multiplication
-            case .division:
-                currentOperation = .division
-            }
-        } else {
-            print("Invalid operation tag!")
-        }
+
         currentValue = "0"
     }
     
@@ -106,7 +84,6 @@ class CalculatorViewController: UIViewController {
         currentOperation = nil // update currentOperation
     }
     
-    
     @IBAction func clearButton(_ sender: UIButton) {
         currentValue = "0"
         calculatorLabel.text = currentValue
@@ -125,7 +102,5 @@ class CalculatorViewController: UIViewController {
         currentValue = String(currenVal * -1)
         calculatorLabel.text = currentValue
     }
-    
-    
 }
 
