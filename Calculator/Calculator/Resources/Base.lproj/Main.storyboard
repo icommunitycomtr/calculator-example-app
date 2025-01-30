@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="28.666666666666657" width="393" height="303.66666666666674"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="vBK-DO-edh">
-                                        <rect key="frame" x="231.66666666666663" y="187.33333333333334" width="145.33333333333337" height="100.33333333333334"/>
+                                        <rect key="frame" x="16" y="187.33333333333334" width="361" height="100.33333333333334"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="90"/>
                                         <nil key="textColor"/>
@@ -31,7 +31,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="vBK-DO-edh" secondAttribute="bottom" constant="16" id="LSr-7w-NGz"/>
-                                    <constraint firstItem="vBK-DO-edh" firstAttribute="width" secondItem="eYo-51-uca" secondAttribute="width" multiplier="0.37" id="P38-Sy-Ott"/>
+                                    <constraint firstItem="vBK-DO-edh" firstAttribute="leading" secondItem="eYo-51-uca" secondAttribute="leading" constant="16" id="dcB-gM-Cyl"/>
                                     <constraint firstItem="vBK-DO-edh" firstAttribute="height" secondItem="eYo-51-uca" secondAttribute="height" multiplier="0.33" id="siJ-Hu-mUm"/>
                                     <constraint firstAttribute="trailing" secondItem="vBK-DO-edh" secondAttribute="trailing" constant="16" id="uXF-ac-hGk"/>
                                 </constraints>
