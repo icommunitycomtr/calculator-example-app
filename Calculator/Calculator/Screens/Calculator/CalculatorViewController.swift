@@ -49,7 +49,13 @@ class CalculatorViewController: UIViewController {
             return
         }
         previousValue = Double(currentValue) ?? 0
-
+        
+        //Set operation type with the tag value
+        if let operation = OperationType(rawValue: operationTag) {
+            currentOperation = operation
+        }else {
+            print("Invalid operation tag!")
+        }
         currentValue = "0"
     }
     
