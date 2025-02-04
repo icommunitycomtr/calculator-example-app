@@ -1,4 +1,4 @@
-# calculator-example-app
+# Calculator Example App
 
 A simple calculator app built with Swift for iOS. This project demonstrates basic arithmetic operations and UI implementation using UIKit.
 
